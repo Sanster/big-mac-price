@@ -22,8 +22,11 @@ const Header = ({
             href="https://github.com/TheEconomist/big-mac-data"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-bold underline underline-offset-8 hover:text-yellow-600 transition-colors duration-300"
+            className="font-bold underline underline-offset-8 text-yellow-500 transition-colors duration-300 group relative"
           >
+            <span className="absolute -left-12 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+              🍔
+            </span>
             Big Mac Index
           </a>{" "}
           based <br className="max-sm:hidden" />
