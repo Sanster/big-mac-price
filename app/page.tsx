@@ -1,5 +1,6 @@
 "use client"
 
+import { FaGithub } from "react-icons/fa"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useState, useEffect } from "react"
@@ -17,7 +18,7 @@ const Header = ({
   return (
     <div className="h-[600px] flex flex-col justify-between max-sm:justify-center max-sm:h-full">
       <div className="flex flex-col gap-2 max-sm:items-center">
-        <h1 className="leading-normal text-4xl font-bold text-left max-sm:text-center max-sm:text-2xl bg-[linear-gradient(146deg,#fff,#757a7d)] bg-clip-text text-transparent">
+        <h1 className="leading-normal text-4xl font-bold text-left max-sm:text-center max-sm:text-2xl bg-[#f7f8f8] bg-clip-text text-transparent">
           <a
             href="https://github.com/TheEconomist/big-mac-data"
             target="_blank"
@@ -80,6 +81,19 @@ export default function Home() {
             <PriceTable data={records} amount={amount} />
           </div>
         </div>
+      </div>
+
+      <div className="fixed flex flex-col gap-4 bottom-8 right-8 bg-background">
+        <a
+          href="https://your-target-url.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="px-4 py-2 flex items-center gap-2 border rounded-md ">
+            <FaGithub />
+            Contribute Big Mac Price
+          </div>
+        </a>
       </div>
     </div>
   )
