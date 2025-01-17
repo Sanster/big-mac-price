@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/stats/:match*",
+            "destination": "https://umami-hazel-tau.vercel.app/:match*"
+        }
+    ]
+}
