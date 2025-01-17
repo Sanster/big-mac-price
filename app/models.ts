@@ -188,7 +188,7 @@ export async function getBigMacData(): Promise<Array<BigMacRecord>> {
   const response = await fetch("big-mac-index.json")
   const data = await response.json()
   return data.map(
-    (item: any) =>
+    (item: BigMacRecord) =>
       new BigMacRecord(
         item.name,
         item.iso_a3,
