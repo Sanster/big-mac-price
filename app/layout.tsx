@@ -1,6 +1,9 @@
 import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next"
+import { Inter } from "next/font/google"
 import "./globals.css"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Global Price Calculator",
@@ -35,7 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <script
+        defer
+        src="/stats/script.js"
+        data-website-id="ff8779f5-f30b-4ea7-8d0c-1a225573de89"
+      ></script>
+      <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
