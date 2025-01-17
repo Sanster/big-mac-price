@@ -85,7 +85,7 @@ export default function Home() {
 
       <div className="fixed flex flex-col gap-4 bottom-8 right-8 bg-background">
         <a
-          href="https://your-target-url.com"
+          href="https://github.com/Sanster/big-mac-price/blob/main/public/big-mac-index.json"
           target="_blank"
           rel="noopener noreferrer"
         >
